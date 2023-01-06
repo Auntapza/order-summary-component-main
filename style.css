@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'red hot display', sans-serif;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    background-color: var(--Verypaleblue);
+    border-radius: 25px;
+    overflow: hidden;
+    align-items: center;
+    width: 450px;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background-color: var(--Paleblue);
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+}
+a {
+    color: var(--Brightblue);
+}
+.proceed {
+    background-color: var(--Brightblue);
+    width: 80%;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0 10px 20px 0 var(--Brightblue);
+}
